@@ -1,5 +1,7 @@
 import nodemailer from 'nodemailer';
 import { type Order, type OrderItem, type Product } from '@shared/schema';
+import dotenv from 'dotenv';
+dotenv.config();
 
 // Email configuration
 const createTransporter = () => {

@@ -4,6 +4,7 @@ import Stripe from "stripe";
 import { storage } from "./storage";
 import { insertProductSchema, insertOrderSchema, insertOrderItemSchema, adminLoginSchema, checkoutSchema } from "@shared/schema";
 import { sendOrderNotificationEmail, sendOrderConfirmationEmail } from "./services/email";
+import "dotenv/config";
 
 if (!process.env.STRIPE_SECRET_KEY) {
   throw new Error('Missing required Stripe secret: STRIPE_SECRET_KEY');
