@@ -1,75 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: hsl(220, 20%, 98%);
-  --foreground: hsl(220, 15%, 15%);
+  --background: hsl(30, 15%, 98%);
+  --foreground: hsl(25, 25%, 12%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(220, 15%, 15%);
+  --card-foreground: hsl(25, 25%, 12%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(220, 15%, 15%);
-  --primary: hsl(220, 90%, 20%);
+  --popover-foreground: hsl(25, 25%, 12%);
+  --primary: hsl(15, 75%, 45%);
   --primary-foreground: hsl(0, 0%, 98%);
-  --secondary: hsl(220, 60%, 35%);
-  --secondary-foreground: hsl(0, 0%, 98%);
-  --muted: hsl(220, 15%, 95%);
-  --muted-foreground: hsl(220, 10%, 45%);
-  --accent: hsl(45, 90%, 60%);
-  --accent-foreground: hsl(220, 90%, 20%);
+  --secondary: hsl(25, 40%, 85%);
+  --secondary-foreground: hsl(25, 25%, 20%);
+  --muted: hsl(30, 12%, 95%);
+  --muted-foreground: hsl(25, 15%, 45%);
+  --accent: hsl(45, 85%, 65%);
+  --accent-foreground: hsl(25, 25%, 12%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(220, 13%, 91%);
-  --input: hsl(220, 13%, 91%);
-  --ring: hsl(220, 90%, 20%);
-  --chart-1: hsl(220, 90%, 20%);
+  --border: hsl(30, 20%, 88%);
+  --input: hsl(30, 20%, 92%);
+  --ring: hsl(15, 75%, 45%);
+  --chart-1: hsl(15, 75%, 45%);
   --chart-2: hsl(159.7826, 100%, 36.0784%);
   --chart-3: hsl(42.0290, 92.8251%, 56.2745%);
   --chart-4: hsl(147.1429, 78.5047%, 41.9608%);
   --chart-5: hsl(341.4894, 75.2000%, 50.9804%);
   --sidebar: hsl(0, 0%, 100%);
-  --sidebar-foreground: hsl(220, 15%, 15%);
-  --sidebar-primary: hsl(220, 90%, 20%);
+  --sidebar-foreground: hsl(25, 25%, 12%);
+  --sidebar-primary: hsl(15, 75%, 45%);
   --sidebar-primary-foreground: hsl(0, 0%, 98%);
-  --sidebar-accent: hsl(220, 15%, 95%);
-  --sidebar-accent-foreground: hsl(220, 90%, 20%);
-  --sidebar-border: hsl(220, 13%, 91%);
-  --sidebar-ring: hsl(220, 90%, 20%);
-  --font-sans: 'Inter', system-ui, sans-serif;
-  --font-serif: Georgia, serif;
+  --sidebar-accent: hsl(30, 12%, 95%);
+  --sidebar-accent-foreground: hsl(15, 75%, 45%);
+  --sidebar-border: hsl(30, 20%, 88%);
+  --sidebar-ring: hsl(15, 75%, 45%);
+  --font-sans: 'Source Sans Pro', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
   --font-mono: Menlo, monospace;
-  --radius: 0.5rem;
+  --radius: 0.75rem;
 }
 
 .dark {
-  --background: hsl(220, 15%, 8%);
-  --foreground: hsl(220, 15%, 95%);
-  --card: hsl(220, 15%, 12%);
-  --card-foreground: hsl(220, 15%, 95%);
-  --popover: hsl(220, 15%, 12%);
-  --popover-foreground: hsl(220, 15%, 95%);
-  --primary: hsl(220, 70%, 45%);
+  --background: hsl(25, 20%, 8%);
+  --foreground: hsl(30, 15%, 92%);
+  --card: hsl(25, 20%, 12%);
+  --card-foreground: hsl(30, 15%, 92%);
+  --popover: hsl(25, 20%, 12%);
+  --popover-foreground: hsl(30, 15%, 92%);
+  --primary: hsl(15, 85%, 55%);
   --primary-foreground: hsl(0, 0%, 98%);
-  --secondary: hsl(220, 40%, 25%);
-  --secondary-foreground: hsl(220, 15%, 95%);
-  --muted: hsl(220, 15%, 15%);
-  --muted-foreground: hsl(220, 10%, 65%);
-  --accent: hsl(45, 80%, 55%);
-  --accent-foreground: hsl(220, 15%, 8%);
+  --secondary: hsl(25, 25%, 20%);
+  --secondary-foreground: hsl(30, 15%, 85%);
+  --muted: hsl(25, 20%, 15%);
+  --muted-foreground: hsl(30, 12%, 65%);
+  --accent: hsl(45, 75%, 60%);
+  --accent-foreground: hsl(25, 20%, 8%);
   --destructive: hsl(0, 75%, 55%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(220, 15%, 20%);
-  --input: hsl(220, 15%, 20%);
-  --ring: hsl(220, 70%, 45%);
-  --sidebar: hsl(220, 15%, 12%);
-  --sidebar-foreground: hsl(220, 15%, 95%);
-  --sidebar-primary: hsl(220, 70%, 45%);
+  --border: hsl(25, 20%, 22%);
+  --input: hsl(25, 20%, 18%);
+  --ring: hsl(15, 85%, 55%);
+  --sidebar: hsl(25, 20%, 12%);
+  --sidebar-foreground: hsl(30, 15%, 92%);
+  --sidebar-primary: hsl(15, 85%, 55%);
   --sidebar-primary-foreground: hsl(0, 0%, 98%);
-  --sidebar-accent: hsl(220, 15%, 15%);
-  --sidebar-accent-foreground: hsl(220, 70%, 45%);
-  --sidebar-border: hsl(220, 15%, 20%);
-  --sidebar-ring: hsl(220, 70%, 45%);
+  --sidebar-accent: hsl(25, 20%, 15%);
+  --sidebar-accent-foreground: hsl(15, 85%, 55%);
+  --sidebar-border: hsl(25, 20%, 22%);
+  --sidebar-ring: hsl(15, 85%, 55%);
 }
 
 @layer base {
@@ -80,15 +80,20 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
 }
 
 .transition-theme {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cart-drawer {
   transform: translateX(100%);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(8px);
 }
 
 .cart-drawer.open {
@@ -96,19 +101,73 @@
 }
 
 .product-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.product-card:hover::before {
+  left: 100%;
 }
 
 .product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .fade-in {
-  animation: fadeIn 0.6s ease-in-out;
+  animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide-up {
+  animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, hsl(15, 75%, 45%) 0%, hsl(25, 65%, 55%) 50%, hsl(45, 85%, 65%) 100%);
+}
+
+.glass-effect {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { 
+    opacity: 0; 
+    transform: translateY(30px);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
